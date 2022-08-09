@@ -1,0 +1,25 @@
+name: snow_generator
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+
+dependencies:
+  # 1
+  build: 
+  # 2
+  source_gen:
+  # 3
+  snow:
+    path: ../snow
+
+dev_dependencies:
+  # 4
+  build_runner:
+  # 5
+  build_test:
+  test: ^1.21.4
+  source_gen_test: ^1.0.3
