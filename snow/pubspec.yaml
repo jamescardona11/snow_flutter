@@ -6,6 +6,18 @@ homepage:
 environment:
   sdk: ">=2.17.6 <3.0.0"
 
+
+dependencies:
+  analyzer: ">=4.2.0 <5.0.0"
+  build: 
+  source_gen:
+  snow_annotation:
+    path: ../snow_annotation
+
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  # 4
+  build_runner:
+  # 5
+  build_test:
   test: ^1.21.4
+  source_gen_test: ^1.0.3
