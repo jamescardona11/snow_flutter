@@ -1,7 +1,7 @@
 targets:
   $default:
     builders:
-      snow_generator:
+      snow:
         enabled: true
         generate_for:
           exclude:
@@ -11,10 +11,10 @@ targets:
             - test/gen_*
 
 builders:
-  snow_generator:
-    target: ":snow_generator"
-    import: "package:snow_generator/builder.dart"
-    builder_factories: ["copyWith", "toString"]
+  snow:
+    target: ":snow"
+    import: "package:snow/builder.dart"
+    builder_factories: ["snowGenerator"]
     build_extensions: {".dart": [".snow.part"]}
     auto_apply: dependents
     build_to: cache

@@ -1,3 +1,7 @@
 library snow_annotation;
 
-export 'snow_copy_with.dart';
+class Snow {
+  const Snow();
+}
+
+const snowGenerator = Snow();
